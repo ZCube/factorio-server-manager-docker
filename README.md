@@ -25,6 +25,7 @@ services:
     restart: unless-stopped
     environment:
       - TZ=UTC
+      - FSM_DIR=/factorio
       - FSM_FACTORIO_IP=factorio
       - FSM_RCON_PORT=27015
       - SSH_HOST=factorio

@@ -64,6 +64,8 @@ RUN  adduser  --disabled-password --uid "$PUID" "$USER" --gid "$PGID" --gecos ""
 
 EXPOSE 80/tcp 34197/udp
 
+ENV FSM_DIR=/factorio
+
 WORKDIR /factorio
 
 ENTRYPOINT ["/docker-entrypoint.sh"]

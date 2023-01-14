@@ -1,5 +1,4 @@
 {
-  "factorio_dir": "/factorio",
   "factorio_binary": "/factorio/factorio-ssh.sh",
   "settings_file": "/factorio/config/server-settings.json",
   "mod_pack_dir": "/factorio/mod_packs",
