@@ -1,5 +1,8 @@
 #!/bin/bash
-until [ -f /factorio/config/rconpw ]
+set -eoux pipefail
+
+FACTORIO_VOL=/factorio
+until [ -f ${FACTORIO_VOL}/config/rconpw ]
 do
      sleep 5
 done
@@ -17,6 +20,7 @@ cd /factorio
 if [[ $(id -u) = 0 ]]; then
   usermod -o -u "$PUID" factorio
   groupmod -o -g "$PGID" factorio
+  chown -R factorio:factorio "$FACTORIO_VOL"
   SU_EXEC="gosu factorio"
 else
   SU_EXEC=""
