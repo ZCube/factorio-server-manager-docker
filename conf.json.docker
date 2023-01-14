@@ -1,0 +1,12 @@
+{
+  "factorio_dir": "/factorio",
+  "factorio_binary": "/factorio/factorio-ssh.sh",
+  "settings_file": "/factorio/config/server-settings.json",
+  "mod_pack_dir": "/factorio/mod_packs",
+  "basemod_dir": "/factorio/data/base",
+	"rcon_pass": "",
+	"sq_lite_database_file": "sqlite.db",
+	"cookie_encryption_key": "",
+	"settings_file": "server-settings.json",
+	"log_file": "factorio-server-manager.log"
+}
