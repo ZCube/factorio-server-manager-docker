@@ -48,7 +48,7 @@ ARG PGID=845
 ENV PUID="$PUID" \
     PGID="$PGID"
 
-RUN apt-get update && apt-get install -y curl tar xz-utils unzip jq ssh sshpass && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl tar xz-utils unzip jq ssh sshpass gosu && rm -rf /var/lib/apt/lists/*
 
 COPY --from=backend /app/factorio-server-manager /factorio-server-manager
 COPY --from=frontend /app/app/ /app/

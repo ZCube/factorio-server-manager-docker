@@ -17,7 +17,7 @@ cd /factorio
 if [[ $(id -u) = 0 ]]; then
   usermod -o -u "$PUID" factorio
   groupmod -o -g "$PGID" factorio
-  SU_EXEC="su-exec factorio"
+  SU_EXEC="gosu factorio"
 else
   SU_EXEC=""
 fi
